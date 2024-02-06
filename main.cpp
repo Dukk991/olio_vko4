@@ -5,10 +5,9 @@ using namespace std;
 
 int main()
 {
-    Asunto olio_1;
+    Asunto asunto;
 
-    olio_1.maarita(2, 100);
-    olio_1.laskeKulutus(200);
-
-    return 0;
+    asunto.maarita(2, 100);
+    double hinta = 1;
+    cout << "Asunnon kulutus kun hinta = " << hinta << ", on = " << asunto.laskeKulutus(hinta) << endl;
 }
