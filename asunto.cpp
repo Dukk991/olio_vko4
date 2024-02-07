@@ -8,12 +8,21 @@ Asunto::Asunto()
     cout << "Asunto luotu" << endl;
 }
 
+Asunto::~Asunto()
+{
+    //dekstruktori
+}
+
 void Asunto::maarita(int asukasMaara, int neliot)
 {
     cout << "Asunto maaritetty, asukkaita = " << asukasMaara << " , nelioita = " << neliot << endl;
+    this->asukasMaara = asukasMaara;
+    this->neliot = neliot;
 }
 
 double Asunto::laskeKulutus(double hinta)
 {
-    return hinta * 200;
+    double kulutus = hinta * asukasMaara * neliot;
+    cout << "Asunnon kulutus kun hinta = " << hinta << ", on = " << kulutus << endl;
+    return kulutus;
 }
