@@ -9,6 +9,7 @@ class Asunto
 {
 public:
     Asunto();
+    ~Asunto();
     int asukasMaara;
     int neliot;
     void maarita(int, int);
